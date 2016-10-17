@@ -90,19 +90,7 @@ app.put('/items/:id', function(req, res){
             message: 'Item was updated'
         })
      })
-//    Item.findById(req.params.id, function(err, item){
-//        if (err){
-//            return res.status(500).json({
-//                message: 'Internal Server Error'
-//            })
-//         }
-//         Item.update(req.body, function(err, item){
-//             console.log(req, res)
-//             res.status(201).json({
-//             message: 'Item was updated'
-//             })
-//         })
-//     })
+
  })
 
 app.use('*', function(req, res) {
