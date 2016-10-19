@@ -65,7 +65,7 @@ app.delete('/items/:id', function(req, res){
     Item.findByIdAndRemove(req.params.id, function(err, item) {
         if (err){
             return res.status(500).json({
-                message: 'Internal Server Error'
+               // message: 'Internal Server Error'
             });
         }
         res.status(201).json({
@@ -83,7 +83,7 @@ app.put('/items/:id', function(req, res){
      function(err, item){
         if (err){
             return res.status(500).json({
-                message: 'Internal Server Error'
+               // message: 'Internal Server Error'
             })
         }
         res.status(201).json({
